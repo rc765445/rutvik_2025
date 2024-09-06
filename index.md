@@ -12,4 +12,4 @@ hide: true
 <head>
 <body>
 
-<h1 style= "font-size: 400%; color: blue; font: bold 50x Arial;"> Rutvik Chavda's Github Page </h1>
+<h1 style= "font-size: 250%; color: blue; font: bold 50x Arial;"> Rutvik Chavda's Github Page </h1>
