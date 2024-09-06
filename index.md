@@ -15,103 +15,165 @@ hide: true
 <h1 style= "font-size: 250%; color: blue; font: bold 50x Arial;"> Rutvik Chavda's Github Page </h1>
 <h2 style= "font-size: 175%; color: white; font: bold 50x Arial;"> Welcome to my Page </h2>
 
+<p id="mario" class="sprite"></
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mario Animation</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #87CEEB;
-      overflow: hidden;
-    }
 
-    .sprite {
-      position: absolute;
-      height: 256px;
-      width: 256px;
-      background-image: url('https://i.imgur.com/Tpi5Bcf.png'); /* Sample sprite sheet for Mario */
-      background-repeat: no-repeat;
-    }
+<style>
+    
+.sprite {
+    height: {{pixels}}px;
+    width: {{pixels}}px;
+    background-image: url('{{sprite_file}}');
+    background-repeat: no-repeat;
+  }
 
-    /* This will be used to set the background position for the sprite */
-    #mario {
-      background-position: 0px 0px; /* Initial Mario position */
-    }
-  </style>
-</head>
-<body>
 
-  <div id="mario" class="sprite"></div>
+   #mario {
+    background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}}* -1px);
+  }
+</style>
 
-  <script>
-    // Define the sprite dimensions
-    const spriteWidth = 256;   // Width of each frame
-    const spriteHeight = 256;  // Height of each frame
 
-    // Get the mario element
-    const marioElement = document.getElementById("mario");
+<script>
 
-    // Define animation metadata
-    const marioFrames = {
-      "Walk": { row: 0, frames: 3 },
-      "Run": { row: 1, frames: 3 },
-      "Rest": { row: 2, frames: 1 }
-    };
+var mario_metadata = {};
+{% for key in hash %}  
 
-    // Setup the initial state for Mario
-    let currentFrame = 0;
-    let currentSpeed = 0;
-    let positionX = 0;
-    let frameCount = marioFrames["Walk"].frames;
-    let tID = null;
+ var key = "{{key | first}}"
+ var values = {} 
+  values["row"] = {{key.row}}
+  values["col"] = {{key.col}}
+  values["frames"] = {{key.frames}}
+  mario_metadata[key] = values
 
-    // Function to animate Mario
-    function animateMario(row, frames, speed) {
-      tID = setInterval(() => {
-        // Calculate column position based on current frame
-        const col = currentFrame * spriteWidth;
-        marioElement.style.backgroundPosition = `-${col}px -${row * spriteHeight}px`;
+    {% endfor %}
 
-        // Move Mario horizontally
-        marioElement.style.left = `${positionX}px`;
-        positionX += speed;  // Move Mario to the right
-
-        // Loop frames and handle the screen edges
-        currentFrame = (currentFrame + 1) % frames;
-        if (positionX > window.innerWidth) {
-          positionX = -spriteWidth;  // Reset position to start from left
-        }
-      }, 150);  // Run every 150ms
-    }
-
-    // Start animation based on key press
-    window.addEventListener("keydown", (event) => {
-      if (event.key === "ArrowRight") {
-        event.preventDefault();
-        if (tID) clearInterval(tID);  // Stop any running animation
-
-        if (currentSpeed === 0) {
-          animateMario(marioFrames["Walk"].row, marioFrames["Walk"].frames, 3);  // Walk
-        } else {
-          animateMario(marioFrames["Run"].row, marioFrames["Run"].frames, 6);   // Run
-        }
-        currentSpeed += 3;  // Increase speed with each key press
-      } else if (event.key === "ArrowLeft") {
-        clearInterval(tID);  // Stop animation
-        marioElement.style.backgroundPosition = `0px -${marioFrames["Rest"].row * spriteHeight}px`;  // Rest frame
-        currentSpeed = 0;  // Reset speed
+    class Mario {
+    constructor(meta_data) {
+      this.tID = null; 
+      this.positionX = 0;
+      this.currentSpeed = 0;
+      this.marioElement = document.getElementById("mario");
+      this.pixels = {{pixels}};
+      this.interval = 100;
+      this.obj = meta_data;
+      this.marioElement.style.position = "absolute";
       }
-    });
 
-    // Start resting animation on load
-    document.addEventListener("DOMContentLoaded", () => {
-      marioElement.style.backgroundPosition = `0px -${marioFrames["Rest"].row * spriteHeight}px`;
-    });
-  </script>
+    animate(obj, speed) {
+      let frame = 0;
+      const row = obj.row * this.pixels;
+      this.currentSpeed = speed;
 
-</body>
-</html>
+      this.tID = setInterval(() => {
+        const col = (frame + obj.col) * this.pixels;
+        this.marioElement.style.backgroundPosition = `-${col}px -${row}px`;
+        this.marioElement.style.left = `${this.positionX}px`;
+                this.positionX += speed;
+        frame = (frame + 1) % obj.frames;
+
+        const viewportWidth = window.innerWidth;
+        if (this.positionX > viewportWidth - this.pixels) {
+          document.documentElement.scrollLeft = this.positionX - viewportWidth + this.pixels;
+        }
+      }, this.interval);
+    } startWalking() {
+      this.stopAnimate();
+      this.animate(this.obj["Walk"], 3);
+    }
+
+    startRunning() {
+      this.stopAnimate();
+      this.animate(this.obj["Run1"], 6);
+    }
+
+    startPuffing() {
+      this.stopAnimate();
+      this.animate(this.obj["Puff"], 0);
+    }
+
+    startCheering() {
+      this.stopAnimate();
+      this.animate(this.obj["Cheer"], 0);
+    }
+
+    startFlipping() {
+      this.stopAnimate();
+      this.animate(this.obj["Flip"], 0);
+    }
+
+    startResting() {
+      this.stopAnimate();
+      this.animate(this.obj["Rest"], 0);
+    }
+
+    stopAnimate() {
+      clearInterval(this.tID);
+    }
+  }
+
+  const mario = new Mario(mario_metadata);
+
+  ////////// event control /////////
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      if (event.repeat) {
+        mario.startCheering();
+      } else {
+        if (mario.currentSpeed === 0) {
+          mario.startWalking();
+        } else if (mario.currentSpeed === 3) {
+          mario.startRunning();
+        }
+      }
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      if (event.repeat) {
+        mario.stopAnimate();
+      } else {
+        mario.startPuffing();
+      }
+    }
+  });
+
+  //touch events that enable animations
+  window.addEventListener("touchstart", (event) => {
+    event.preventDefault(); // prevent default browser action
+    if (event.touches[0].clientX > window.innerWidth / 2) {
+      // move right
+      if (currentSpeed === 0) { // if at rest, go to walking
+        mario.startWalking();
+      } else if (currentSpeed === 3) { // if walking, go to running
+        mario.startRunning();
+      }
+    } else {
+      // move left
+      mario.startPuffing();
+    }
+  });
+
+  //stop animation on window blur
+  window.addEventListener("blur", () => {
+    mario.stopAnimate();
+  });
+
+  //start animation on window focus
+  window.addEventListener("focus", () => {
+     mario.startFlipping();
+  });
+
+  //start animation on page load or page refresh
+  document.addEventListener("DOMContentLoaded", () => {
+    // adjust sprite size for high pixel density devices
+    const scale = window.devicePixelRatio;
+    const sprite = document.querySelector(".sprite");
+    sprite.style.transform = `scale(${0.2 * scale})`;
+    mario.startResting();
+  });
+
+</script>
+
+
+
