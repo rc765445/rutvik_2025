@@ -257,11 +257,59 @@ hide: true
         }
     </script>
  
-g
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Button in Paragraph</title>
+    <style>
+        /* Style for the button-link class */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Text color */
+            background-color: #4CAF50; /* Green background */
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid #4CAF50; /* Border color same as background */
+            transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+        }
+
+        /* Hover effect for the button */
+        .button-link:hover {
+            background-color: #45a049; /* Darker green */
+            border-color: #45a049; /* Darker border */
+        }
+        
+        /* Additional styles for paragraphs and divisions */
+        .container {
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Paragraph with button -->
+    <p>
+        <a href="https://poway.instructure.com/" class="button-link">Canvas</a>
+    </p>
+
+    <!-- Division with button -->
+    <div class="container">
+        <a href="https://poway.instructure.com/" class="button-link">Canvas</a>
+    </div>
+
+</body>
+</html>
+
+
 </body>
 </html>
 
 ![image](images/IMG_3654.jpg)
  <!-- Button with Text and Additional Attributes -->
     
-<a href= "https://poway.instructure.com/":><button> Click Here to go to Canvas</button></a>
