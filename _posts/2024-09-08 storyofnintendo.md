@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Incredible India, A Journey Through Time and Culture! (Pair Showcase)
-permalink: /nintendo/
+permalink: /history-nintendo/
 toc: true
 ---
 
