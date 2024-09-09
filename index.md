@@ -260,4 +260,4 @@ hide: true
 </body>
 </html>
 
-<img src="{{ site.baseurl }}/images/IMG_3653.jpg">
+![image]({{site.baseurl}}/images/3654.jpg)
