@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indian Culture Blog
+title: Incredible India, A Journey Through Time and Culture (Pair Showcase)
 permalink: /india-culture/
 toc: true
 ---
