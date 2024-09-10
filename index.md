@@ -248,7 +248,7 @@ hide: true
     
     <button onclick="displayMessage()">Click Me</button>
     
-    <div id="dynamicText">Hello, world! This message is dynamic.</div>
+    <div id="dynamicText">Welcome to My Page!😀</div>
 
     <script>
         function displayMessage() {
