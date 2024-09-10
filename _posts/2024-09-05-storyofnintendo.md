@@ -16,7 +16,7 @@ toc: true
 The release of the Nintendo Entertainment System (NES) in 1983 (in Japan as the Famicom) was a game-changer, reviving the North American video game market after the crash of 1983 and setting new standards for home gaming with classic titles like "Super Mario Bros." and "The Legend of Zelda." The 1980s also saw the launch of the Game Boy in 1989, a revolutionary handheld console that popularized portable gaming and was pivotal in the success of franchises like "Pokémon." In the 1990s, Nintendo continued to lead with the Super Nintendo Entertainment System (SNES), renowned for its impressive game library and technological advancements. The release of the Nintendo 64 in 1996 introduced 3D graphics and iconic titles such as "Super Mario 64" and "The Legend of Zelda: Ocarina of Time." The early 2000s brought the Nintendo GameCube and the innovative Nintendo DS, which featured dual screens and a touch interface, further expanding the scope of portable gaming. The mid-2000s saw Nintendo's foray into motion-controlled gaming with the Wii, a massive success due to its accessibility and broad appeal. The Wii's unique controls and games like "Wii Sports" reached a diverse audience beyond traditional gamers. The Nintendo 3DS, released in 2011, introduced glasses-free 3D gaming and continued Nintendo's tradition of portable innovation.  </p2>
 
 
-
+![image](../images/IMG_3423.jpg)
 
 
 
