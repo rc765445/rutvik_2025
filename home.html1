@@ -11,7 +11,7 @@
 </table>
 
 <script type="module">
-    import { pythonURI, fetchOptions } from '{{site.baseurl}}/assets/js/api/config.js';
+    import { python3URI, fetchOptions } from '{{site.baseurl}}/assets/js/api/config.js';
 
     document.addEventListener('DOMContentLoaded', function() {
     getCredentials() // Call the function to get credentials
@@ -41,7 +41,7 @@
     });
 
     function getCredentials() {
-        const URL = pythonURI + '/api/id';
+        const URL = python3URI + '/api/id';
         return fetch(URL, fetchOptions)
             .then(response => { // API response handler 
                 if (response.status !== 200) {
