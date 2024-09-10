@@ -19,4 +19,4 @@ The release of the Nintendo Entertainment System (NES) in 1983 (in Japan as the 
 </body>
 </html>
 
-![image](../images/IMG_3423.jpg)
+
