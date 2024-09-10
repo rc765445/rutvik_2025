@@ -327,7 +327,7 @@ hide: true
 </head>
 <body>
 
-    
+    <p> Click Here to go to MyPlan:</p>
 
     <!-- Division with button -->
     <div class="container">
@@ -339,8 +339,9 @@ hide: true
 
 </head>
 <body>
+    
+    <p> Click Here to go to Canvas:</p>
 
-   
 
     <!-- Division with button -->
     <div class="container">
