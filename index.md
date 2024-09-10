@@ -256,7 +256,38 @@ hide: true
             textElement.style.display = 'block';
         }
     </script>
- 
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <style>
+        /* Style for the button-link class */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Text color */
+            background-color: #4CAF50; /* Green background */
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid #4CAF50; /* Border color same as background */
+            transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+        }
+
+        /* Hover effect for the button */
+        .button-link:hover {
+            background-color: #45a049; /* Darker green */
+            border-color: #45a049; /* Darker border */
+        }
+        
+        /* Additional styles for paragraphs and divisions */
+        .container {
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
 
 <html lang="en">
 <head>
@@ -296,70 +327,7 @@ hide: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customizable Button for Synergy PUSD</title>
-    <style>
-        /* Style for the button-link class */
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none; /* Remove underline from links */
-            color: white; /* Text color */
-            background-color: #4CAF50; /* Green background */
-            border-radius: 5px; /* Rounded corners */
-            border: 1px solid #4CAF50; /* Border color same as background */
-            transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
-        }
-
-        /* Hover effect for the button */
-        .button-link:hover {
-            background-color: #45a049; /* Darker green */
-            border-color: #45a049; /* Darker border */
-        }
-        
-        /* Additional styles for paragraphs and divisions */
-        .container {
-            padding: 20px;
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-
-    
-
-    <!-- Division with button -->
-    <div class="container">
-        <a href="https://synergy.pusd.us/" class="button-link">Synergy PUSD</a>
-    </div>
-
-</body>
-</html>
-
-</head>
-<body>
-
-   
-
-    <!-- Division with button -->
-    <div class="container">
-        <a href="https://poway.instructure.com/" class="button-link">Canvas</a>
-    </div>
-
-</body>
-</html>
-
-
-</body>
-</html>
-
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customizable Button for MyPlan</title>
+    <title>MyPlan</title>
     <style>
         /* Style for the button-link class */
         .button-link {
@@ -396,6 +364,42 @@ hide: true
     <div class="container">
         <a href="https://myapps.classlink.com/home" class="button-link">MyPlan</a>
     </div>
+
+</body>
+</html>
+
+</head>
+<body>
+
+   
+
+    <!-- Division with button -->
+    <div class="container">
+        <a href="https://poway.instructure.com/" class="button-link">Canvas</a>
+    </div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+<!-- Division with button -->
+    <div class="container">
+        <a href="https://nighthawkcoders.github.io/portfolio_2025/" class="button-link">Canvas</a>
+    </div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+
 
 
 
