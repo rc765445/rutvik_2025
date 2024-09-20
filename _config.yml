@@ -24,4 +24,5 @@ header_pages:
   - navigation/search.md
   - navigation/about.md
   - navigation/journey.md
+  - _notebooks/python
   - README4YML.md
