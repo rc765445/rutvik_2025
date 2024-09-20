@@ -362,4 +362,6 @@ hide: true
 
 ![image](images/IMG_3654.jpg)
  <!-- Button with Text and Additional Attributes -->
+
+ <td><a href="{{site.baseurl}}/python/">Python</a></td>
     
