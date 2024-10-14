@@ -1,0 +1,173 @@
+---
+layout: post
+title: Incredible India, A Journey Through Time and Culture (Pair Showcase)
+permalink: /3.10/
+toc: True
+---
+
+const numbers = [1, 2, 3, 4, 5];
+
+
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log("Sum of the array:", sum);
+
+
+let randomNumbers = [9, 3, 77, 80, 1, 8, 4];
+
+
+randomNumbers.sort((a, b) => a - b);
+
+console.log("Numerically sorted array:", randomNumbers);
+
+let numberWords = ["nine", "three", "seventy-seven", "eighty", "one", "eight", "four"];
+
+
+numberWords.sort();
+
+console.log("Alphabetically sorted words:", numberWords);
+
+
+// Shopping cart array to hold items
+let shoppingCart = [];
+
+// Function to display the current cart contents
+function displayCart() {
+    if (shoppingCart.length === 0) {
+        console.log("🛒 Your cart is empty!");
+    } else {
+        console.log("🛒 Your shopping cart contains: " + shoppingCart.join(' '));
+    }
+}
+
+// Function to add an item to the shopping cart
+function addItem(item) {
+    shoppingCart.push(item);
+    console.log(`${item} has been added to your cart.`);
+    displayCart();
+}
+
+// Function to remove an item from the shopping cart
+function removeItem(item) {
+    const index = shoppingCart.indexOf(item);
+    if (index !== -1) {
+        shoppingCart.splice(index, 1);
+        console.log(`${item} has been removed from your cart.`);
+    } else {
+        console.log(`${item} is not in your cart.`);
+    }
+    displayCart();
+}
+
+// Function to clear the shopping cart
+function clearCart() {
+    shoppingCart = [];
+    console.log("Your cart has been cleared.");
+    displayCart();
+}
+
+// Main function to simulate shopping actions
+function startShopping() {
+    addItem("🍎"); // Add apple
+    addItem("🥛"); // Add milk
+    addItem("🍞"); // Add bread
+    addItem("🍪"); // Add cookie
+    removeItem("🍞"); // Remove bread
+    addItem("🍇"); // Add grapes
+    clearCart(); // Clear the cart
+}
+
+// Start the shopping simulation
+startShopping();
+
+
+# Original list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Using list comprehension to filter even numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+
+# Output the filtered list
+print("Even numbers:", even_numbers)
+
+
+# List to store user elements
+user_list = []
+
+# Function to display the current list
+def display_list():
+    if user_list:
+        print("Current list:", user_list)
+    else:
+        print("The list is currently empty.")
+
+# Function to add an element to the list
+def add_element(element):
+    user_list.append(element)
+    print(f"{element} has been added to the list.")
+
+# Function to remove an element from the list
+def remove_element(element):
+    if element in user_list:
+        user_list.remove(element)
+        print(f"{element} has been removed from the list.")
+    else:
+        print(f"{element} is not in the list.")
+
+# Function to check if an element exists in the list
+def check_element(element):
+    if element in user_list:
+        print(f"{element} is in the list.")
+    else:
+        print(f"{element} is not in the list.")
+
+# Function to find the maximum and minimum values in the list using iteration
+def find_max_min():
+    if user_list:
+        max_value = user_list[0]
+        min_value = user_list[0]
+        for item in user_list:
+            if item > max_value:
+                max_value = item
+            if item < min_value:
+                min_value = item
+        print(f"Maximum value: {max_value}")
+        print(f"Minimum value: {min_value}")
+    else:
+        print("The list is empty. Cannot find max or min.")
+
+# Main loop to manage the list
+def start_list_management():
+    while True:
+        print("\nMenu:")
+        print("1. Add an element")
+        print("2. Remove an element")
+        print("3. Check if an element exists")
+        print("4. Display the list")
+        print("5. Find maximum and minimum values")
+        print("6. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            element = int(input("Enter the element to add: "))
+            add_element(element)
+        elif choice == '2':
+            element = int(input("Enter the element to remove: "))
+            remove_element(element)
+        elif choice == '3':
+            element = int(input("Enter the element to check: "))
+            check_element(element)
+        elif choice == '4':
+            display_list()
+        elif choice == '5':
+            find_max_min()
+        elif choice == '6':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+# Start the program
+start_list_management()
+
