@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Final Blog Trimester 2
-permalink: /final/
+permalink: /finalBlog/
 ---
 
 ### Reflection on Trimester 2
