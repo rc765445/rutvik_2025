@@ -18,6 +18,7 @@ worked hard to bring my grade up and learn.
 - Frontend and Backend Development- Developed a frontend page and an api/model in the backend storing 
 binary/decimal conversions. They would both be connected through crud methods and python URI (connecting
 to the api)
+
 ```javascript
 from flask import Blueprint, request, jsonify, current_app, Response, g
 from flask_restful import Api, Resource  # Used for REST API building
