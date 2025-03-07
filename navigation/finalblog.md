@@ -13,7 +13,7 @@ permalink: /finalBlog/
 ### 5 Things/Accomplishments I did:
 
 1. Frontend and Backend Development- Developed a frontend page and an api/model in the backend storing binary/decimal conversions in the backend data table. They would both be connected through crud methods and python URI (connecting to the api). 
-2. 
+2. 44
 
 
           
