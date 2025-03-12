@@ -4,3 +4,7 @@ pyyaml
 notebook
 requests
 python3-dotenv
+pandas
+seaborn
+scikit-learn
+progress
