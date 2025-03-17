@@ -109,12 +109,3 @@ our project
 - Lack of Frontend Integration
 - Error Handling
 
-
-<script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/rutvik_2025"
-        issue-term="pathname"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
