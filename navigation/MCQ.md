@@ -6,7 +6,7 @@ permalink: /MCQ/
 
 ### Practice MCQ
 
-<img src="{{site.baseurl}}/images/MCQ.png" width="750px">
+<img src="{{site.baseurl}}/assets/images/MCQ.png" width="750px">
 <img src="{{site.baseurl}}/navigation/images/Time.png" width="750px">
 
 
