@@ -72,7 +72,7 @@ class BinaryConverter(db.Model):
 - Uses a ready up feature where the two players have to ready up to enter the game
 - Helps the user learn and solidfy there understanding on binary
 
-<img src="{{site.baseurl}}/images/images/binaryConverter.png" width="750px">
+<img src="{{site.baseurl}}/images/binaryConverter.png" width="750px">
 
 #### Binary Converter
 
