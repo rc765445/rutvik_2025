@@ -114,3 +114,10 @@ results = [entry.read() for entry in entries]  # Converts rows into dictionaries
 ```
 
 
+<script src="https://utteranc.es/client.js"
+        repo="rc765445/rutvik_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
