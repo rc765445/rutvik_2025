@@ -3,7 +3,7 @@ layout: page
 title: PPR Blog
 permalink: /PPR/
 ---
-d
+
 
 #### What is PPR?
 
