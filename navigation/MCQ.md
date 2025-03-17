@@ -3,7 +3,7 @@ layout: page
 title: MCQ Blog
 permalink: /MCQ/
 ---
-
+d
 ### Practice MCQ
 
 <img src="{{site.baseurl}}/navigation/images/MCQ.png" width="750px">
