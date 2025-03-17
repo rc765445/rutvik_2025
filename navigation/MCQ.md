@@ -110,8 +110,8 @@ our project
 - Error Handling
 
 <script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/portfolio_2025"
-        issue-term="title"
+        repo="nighthawkcoders/rutvik_2025"
+        issue-term="pathname"
         label="blogpost-comment"
         theme="github-light"
         crossorigin="anonymous"
