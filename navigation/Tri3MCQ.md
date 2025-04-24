@@ -48,8 +48,8 @@ permalink: /Tri 3 MCQ Blog/
 ## 📝 Fast Facts at a Glance
 | Piece                    | % of Score | What It Looks Like                                                        | When It Happens                 |
 |--------------------------|------------|---------------------------------------------------------------------------|---------------------------------|
-| **Create Task**           | **30 %**   | Upload code, list, algorithm video (≤ 1 min), screenshots, and written responses | Locked **April 30 @ 11:59 p.m. ET** |
-| **End‑of‑Course Exam**    | **70 %**   | 70 MCQs (57 single‑select, 13 multi‑select)                                 | May 15, 2025 (A.M. slot)        |
+| **Create Task**           | **30%**    | Upload code, list, algorithm video (≤ 1 min), screenshots, and written responses | Locked **April 30 @ 11:59 p.m. ET** |
+| **End‑of‑Course Exam**    | **70%**    | 70 MCQs (57 single‑select, 13 multi‑select)                                 | May 15, 2025 (A.M. slot)        |
 
 ---
 
@@ -213,4 +213,4 @@ Based on recent performance data, here are the topics I need to focus on most, a
 - Watch: *Boolean Logic Crash Course*
 - Revisit comparison operators (==, !=, <, >, <=, >=) and logical operators (and, or, not).
 - Use truth tables to better understand logic combinations.
-- Practice Question: Evaluate: `(5 > 3) and (2 == 2) or (4 <
+- Practice Question: Evaluate: `(5 > 3) and (2 == 2) or (4 < 1)`
