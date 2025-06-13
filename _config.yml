@@ -15,6 +15,7 @@ minima:
 <<<<<<< HEAD
 # remote_theme: pages-themes/midnight@v0.2.0
 <<<<<<< HEAD
+<<<<<<< HEAD
   remote_theme: pages-themes/cayman@v0.2.0
 =======
 =======
@@ -22,6 +23,9 @@ remote_theme: pages-themes/midnight@v0.2.0
 >>>>>>> parent of ee65e0e (theme change)
 # remote_theme: pages-themes/cayman@v0.2.0
 >>>>>>> parent of 7766bd3 (theme change 2)
+=======
+ remote_theme: pages-themes/cayman@v0.2.0
+>>>>>>> parent of 3e345f1 (spacing)
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
 #remote_theme: pages-themes/time-machine@v0.2.0
