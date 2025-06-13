@@ -12,14 +12,18 @@ minima:
     - { platform: github, user_url: "https://github.com/nighthawkcoders"}
     - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
     - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" } 
+<<<<<<< HEAD
 # remote_theme: pages-themes/midnight@v0.2.0
 <<<<<<< HEAD
   remote_theme: pages-themes/cayman@v0.2.0
 =======
+=======
+remote_theme: pages-themes/midnight@v0.2.0
+>>>>>>> parent of ee65e0e (theme change)
 # remote_theme: pages-themes/cayman@v0.2.0
 >>>>>>> parent of 7766bd3 (theme change 2)
 # remote_theme: pages-themes/dinky@v0.2.0
- remote_theme: pages-themes/minimal@v0.2.0
+# remote_theme: pages-themes/minimal@v0.2.0
 #remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
