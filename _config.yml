@@ -17,6 +17,7 @@ minima:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   remote_theme: pages-themes/cayman@v0.2.0
 =======
 =======
@@ -30,8 +31,11 @@ remote_theme: pages-themes/midnight@v0.2.0
 =======
   remote_theme: pages-themes/cayman@v0.2.0
 >>>>>>> parent of 46037bd (spacing 2)
+=======
+#  remote_theme: pages-themes/cayman@v0.2.0
+>>>>>>> parent of 77c82a2 (spacing 3)
 # remote_theme: pages-themes/dinky@v0.2.0
-# remote_theme: pages-themes/minimal@v0.2.0
+ remote_theme: pages-themes/minimal@v0.2.0
 #remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
